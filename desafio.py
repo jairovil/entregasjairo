@@ -24,7 +24,7 @@ def cifra_de_cesar(caractere, deslocamento):
 def criptografar_senha(senha):
     return ''.join(cifra_de_cesar(c, 3) for c in senha)
 
-def main():
+def aleatoria():
     tamanho = 8
     senha = gerar_senha_recursiva(tamanho)
     senha_criptografada = criptografar_senha(senha)
@@ -32,4 +32,4 @@ def main():
     print(f"Senha original: {senha}")
     print(f"Senha criptografada: {senha_criptografada}")
 
-main()
+aleatoria()
